@@ -1,3 +1,6 @@
+Unity Manual ToC
+================
+
 * [Cinemachine Documentation](index)
     * [Cinemachine overview](CinemachineOverview)
     * [Getting started](CinemachineGettingStarted)
