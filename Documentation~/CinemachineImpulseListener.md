@@ -6,7 +6,7 @@ When you add an **Impulse Listener** extension to a virtual camera, it makes the
 
 In the image below, the figure’s feet are Impulse Sources. When they collide with the floor (A) they generate impulses. The camera is an Impulse Listener and reacts to the impulses by shaking (B), which shakes the resulting image in the Game view (C). 
 
-![In this Scene, the figure’s feet are Impulse Sources. When they collide with the floor (A) they generate impulses. The camera is an Impulse Listener and reacts to the impulses by shaking (B), which shakes the resulting image in the Game view (C). ](images/ImpulseOverview.png)
+![In this Scene, the figure’s feet are Impulse Sources. When they collide with the floor (A) they generate impulses. The camera is an Impulse Listener and reacts to the impulses by shaking (B), which shakes the resulting image in the Game view (C). ](Images/ImpulseOverview_5c6c12e5dd83130d44febe35.png)
 
 To add an Impulse Listener to a Cinemachine virtual camera:
 
@@ -14,7 +14,7 @@ To add an Impulse Listener to a Cinemachine virtual camera:
 
 2. Go to **Extensions > Add Extension**, and select **CinemachineImpulseListener**.
 
-![](images/InspectorImpulseListener.png)
+![](Images/InspectorImpulseListener_5c6c12e6dd83130d44febe4c.png)
 
 In the real world, some cameras are mounted less rigidly than others, and tend to shake more as a result. The Impulse Listener’s **Gain** property emulates this behavior by amplifying or attenuating impulse vibration signals. Higher values cause the camera to shake more.
 
