@@ -6,9 +6,9 @@ Follow the steps in this section to install Cinemachine in your project. Get sta
 
 Cinemachine is a free package, available for any project. You install Cinemachine like [any other package](https://docs.unity3d.com/Packages/com.unity.package-manager-ui@latest/index.html).
 
-After you install Cinemachine, a new *Cinemachine* folder appears in the Gizmos folder of your Project window, and a new __Cinemachine__ menu is available.
+After you install Cinemachine, a new *Cinemachine* folder appears in the Gizmos folder of your Project window, and a new **Cinemachine** menu is available.
 
-![Cinemachine menu in the Unity Editor](images/CinemachineMenu.png)
+![Cinemachine menu in the Unity Editor](Images/CinemachineMenu_5c6c12dcdd83130d44febdbd.png)
 
 ## Upgrading from the Cinemachine Asset Package
 
@@ -30,7 +30,7 @@ To upgrade to the Cinemachine Package:
 
 Use the [Unity Tutorials](https://unity3d.com/learn/tutorials/s/animation) to see demonstrations for setting up and using Cinemachine.
 
-Experiment with the example Assets. In the Unity menu, choose __Cinemachine > Import Example Asset Package__ to import these Assets.
+Experiment with the example Assets. In the Unity menu, choose **Cinemachine > Import Example Asset Package** to import these Assets.
 
 Discuss your Cinemachine challenges and ideas in the [Cinemachine community forum](https://forum.unity.com/forums/cinemachine.136) and in the [Answers page](https://answers.unity.com/search.html?sort=relevance&q=cinemachine).
 
