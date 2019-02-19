@@ -4,7 +4,7 @@ An Impulse Source is a component that emits a vibration signal from a point in S
 
 In the image below, the figure's feet are Impulse Sources. When they collide with the floor (A) they generate impulses. The camera is an Impulse Listener and reacts to the impulses by shaking (B), which shakes the resulting image in the game view (C). 
 
-![In this Scene, the figure's feet are Impulse Sources. When they collide with the floor (A) they generate impulses. The camera is an Impulse Listener and reacts to the impulses by shaking (B), which shakes the resulting image in the game view (C). ](images/ImpulseOverview.png)
+![In this Scene, the figure's feet are Impulse Sources. When they collide with the floor (A) they generate impulses. The camera is an Impulse Listener and reacts to the impulses by shaking (B), which shakes the resulting image in the game view (C). ](Images/ImpulseOverview_5c6c12e5dd83130d44febe35.png)
 
 Cinemachine ships with two types of Impulse Source component.
 
@@ -40,7 +40,7 @@ Below you'll find detailed descriptions of the following key properties:
 
 For descriptions of all Impulse Source properties, as well as instructions for adding Impulse Sources to your scene, see documentation on the [Impulse Source](CinemachineImpulseSource.md) and [Collision Impulse Source](CinemachineCollisionImpulseSource.md) components.
 
-<a name="Amplitude"></a>
+
 ### Amplitude
 
 The amplitude of the raw impulse signal controls the strength of the vibration for each impact. There are two ways to adjust the amplitude for a given Impulse Source.
@@ -56,14 +56,14 @@ Changing the magnitude of the **Velocity** vector when generating the signal als
 These global and per-impact adjustments are multiplied to calculate the actual amplitude of each impact.
 
 
-<a name="Orientation"></a>
+
 ### Orientation and Direction
 
 To create realistic vibrations, an impulse signal should be strongest along the axis of impact, and its amplitude (or strength) should be proportional to the force of the impact. For example, if you strike a wall with a hammer, the wall vibrates primarily along the axis of the hammer’s path. For the hammer’s impulse signal to be realistic, it should have the most vibration along that axis.
 
 In the image below, the main axis for vibration (A) matches the direction the hammer is traveling when it hits the wall (B).
 
-![The main axis for vibration (A) matches the direction the hammer is traveling when it hits the wall (B).](images/ImpulseHammerStrike.png)
+![The main axis for vibration (A) matches the direction the hammer is traveling when it hits the wall (B).](Images/ImpulseHammerStrike_5c6c12e5dd83130d44febe36.png)
 
 Rather than requiring separate signal definitions for every possible impact direction and strength, Impulse uses the concept of a “local space” for defining the raw signal. You can rotate and scale the raw signal in its local space to produce a “final” signal that matches the actual impact.
 
@@ -88,7 +88,7 @@ The effect isn’t noticeable for radially symmetric vibrations, but for signals
 The default **Direction Mode** setting of **Fixed** turns the effect off.
 
 
-<a name="TimeEnvelope"></a>
+
 ### Time envelope
 
 Vibrations from a real-world impact get stronger until they reach their peak strength, then weaken until the vibration stops. How long this cycle takes depends on the strength of the impact, and the characteristics of the GameObjects involved.
@@ -105,7 +105,7 @@ Both **Attack** and **Decay** consist of a duration value that specifies how lon
 
 Taken together, these properties control how long vibrations from an impact occurrence last, and how they fade in and fade out. However, they don’t account for the strength of the impact. To do that, enable the **Scale with Impact** property. When it’s enabled, the time envelope scales according the strength of an impact. Stronger impacts make the envelope longer, and weaker ones make it shorter. This does not affect the envelope’s proportions.
 
-<a name="SpatialRange"></a>
+
 ### Spatial Range
 
 An Impulse Source’s **[Spatial Range](CinemachineImpulseSource.md#SpatialRange)** properties define the zone in the Scene that the Impulse Source affects. Impulse Listeners in this zone react to the Impulse source (unless they are [filtered out](CinemachineImpulseFiltering.md)), while Listeners outside of it do not.
@@ -114,7 +114,7 @@ The zone consists of two parts: the **Impact Radius** and the **Dissipation Dist
 
 In the image below, the vibration signal stays at full strength from the time it’s emitted from impact point until it reaches the Impact Radius (A), then fades out over the Dissipation Distance (B).
 
-![The vibration signal stays at full strength from the time it’s emitted from impact point until it reaches the Impact Radius (A), then fades out over the Dissipation Distance (B).](images/ImpulseSpatialRange.png)
+![The vibration signal stays at full strength from the time it’s emitted from impact point until it reaches the Impact Radius (A), then fades out over the Dissipation Distance (B).](Images/ImpulseSpatialRange_5c6c12e5dd83130d44febe37.png)
 
 The **Dissipation Mode**  property controls _how_ the signal fades out over the **Dissipation Distance**. 
 
