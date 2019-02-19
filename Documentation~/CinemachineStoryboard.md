@@ -10,16 +10,16 @@ Use the properties in the Storyboard component to hide and show the image to com
 
 | **Property:** || **Function:** |
 |:---|:---|:---|
-| __Show Image__ || Toggle the visibility of the storyboard image. |
-| __Image__ || The image to display as an overlay over the output of the Virtual Camera. |
-| __Aspect__ || How to handle differences between image aspect and screen aspect. |
+| **Show Image** || Toggle the visibility of the storyboard image. |
+| **Image** || The image to display as an overlay over the output of the Virtual Camera. |
+| **Aspect** || How to handle differences between image aspect and screen aspect. |
 | | _Best Fit_ | Resize the image as large as possible on the screen without cropping. Preserve the vertical and horizontal proportions. |
 | | _Crop Image To Fit_ | Resize the image to fill the screen, cropping if necessary. Preserve the vertical and horizontal proportions. |
 | | _Stretch To Fit_ | Resize the image to fill the screen, adjusting the vertical or horizontal width if necessary.  |
-| __Alpha__ || The opacity of the image. Use 0 for transparent, 1 for opaque. |
-| __Center__ || The screen-space position of the image. Use 0 for center. |
-| __Rotation__ || The screen-space rotation of the image. |
-| __Scale__ || The screen-space scaling of the image. |
-| __Sync Scale__ || Check to synchronize the scale of the x and y axes. |
-| __Mute Camera__ || Check to prevent the Virtual Camera from updating the position, rotation, or scale of the Unity camera. Use this feature to prevent Timeline from [blending](CinemachineBlending.html) the camera to an unintended position in the Scene. |
-| __Split View__ || Wipe the image on and off horizontally. |
+| **Alpha** || The opacity of the image. Use 0 for transparent, 1 for opaque. |
+| **Center** || The screen-space position of the image. Use 0 for center. |
+| **Rotation** || The screen-space rotation of the image. |
+| **Scale** || The screen-space scaling of the image. |
+| **Sync Scale** || Check to synchronize the scale of the x and y axes. |
+| **Mute Camera** || Check to prevent the Virtual Camera from updating the position, rotation, or scale of the Unity camera. Use this feature to prevent Timeline from [blending](CinemachineBlending.html) the camera to an unintended position in the Scene. |
+| **Split View** || Wipe the image on and off horizontally. |
