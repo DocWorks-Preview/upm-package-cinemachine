@@ -1,6 +1,6 @@
 # Cinemachine
 
-![Unity Cinemachine](images/CinemachineSplash.png)
+![Unity Cinemachine](Images/CinemachineSplash_5c6c12dbdd83130d44febdba.png)
 
 Cinemachine is a suite of modules for operating the Unity camera. Cinemachine solves the complex mathematics and logic of tracking targets, composing, blending, and cutting between shots. It is designed to significantly reduce the number of time-consuming manual manipulations and script revisions that take place during development.
 
@@ -8,7 +8,7 @@ The procedural nature of these modules makes Cinemachine bug-resistant. When you
 
 Cinemachine works in real time across all genres including FPS, third person, 2D, side-scroller, top down, and RTS. It supports as many shots in your Scene as you need. Its modular system lets you compose sophisticated behaviors.
 
-Cinemachine works well with other Unity tools, acting as a powerful complement to Timeline, animation, and post-processing assets.  Create your own [extensions](CinemachineVirtualCameraExtensions) or integrate it with your custom camera scripts.
+Cinemachine works well with other Unity tools, acting as a powerful complement to Timeline, animation, and post-processing assets.  Create your own [extensions](CinemachineVirtualCameraExtensions.md) or integrate it with your custom camera scripts.
 
 ## Requirements
 
