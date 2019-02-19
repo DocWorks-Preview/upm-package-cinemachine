@@ -10,7 +10,7 @@ Usually these raw signals are Assets in the Project.
 
 In the Impulse Source Inspector window, use the **Raw Signal** field to see which signal is connected to the Impulse Source. The Settings menu (indicated with a gear icon) next to the field provides options for working with raw signals:
 
-![img](images/InspectorImpulseSourceRawSignalMenu.png)
+![img](Images/InspectorImpulseSourceRawSignalMenu_5c6c12e6dd83130d44febe40.png)
 
 - **Edit** opens the signal in either the Noise Profile Inspector or the Fixed Signal Inspector.
 - **Clone** duplicates the signal Asset. This is useful when you want to use a preset or an existing Asset as a base for a new signal.
