@@ -1,42 +1,42 @@
 # Orbital Transposer
 
-This Virtual Camera __Body__ algorithm moves the Unity camera in a variable relationship to the Virtual Camera’s __Follow__ target. It optionally accepts [player input](https://docs.unity3d.com/Manual/ConventionalGameInput.html), which allows the player to dynamically control the position of the camera relative to the target.
+This Virtual Camera **Body** algorithm moves the Unity camera in a variable relationship to the Virtual Camera’s **Follow** target. It optionally accepts [player input](https://docs.unity3d.com/Manual/ConventionalGameInput.html), which allows the player to dynamically control the position of the camera relative to the target.
 
-The __Orbital Transposer__ introduces the concept of __heading__, which is the direction in which the target is moving or facing. Orbital Transposer attempts to position the camera so that it points in the same direction as the heading direction. By default, this position is directly behind the target. Control this relationship by adjusting the __Heading Bias__ property.
+The **Orbital Transposer** introduces the concept of **heading**, which is the direction in which the target is moving or facing. Orbital Transposer attempts to position the camera so that it points in the same direction as the heading direction. By default, this position is directly behind the target. Control this relationship by adjusting the **Heading Bias** property.
 
-If you attach an input controller to the __Orbital Transposer__, then the player can also control the camera. This allows the player to move the camera to any spot on an orbit around the target.  Configure the __Orbital Transposer__ to take its input from any axis that you set up in the [Input Manager](https://docs.unity3d.com/Manual/class-InputManager.html). Or control the value directly using a custom input system.
+If you attach an input controller to the **Orbital Transposer**, then the player can also control the camera. This allows the player to move the camera to any spot on an orbit around the target.  Configure the **Orbital Transposer** to take its input from any axis that you set up in the [Input Manager](https://docs.unity3d.com/Manual/class-InputManager.html). Or control the value directly using a custom input system.
 
-__Orbital Transposer __optionally automatically re-centers the camera.  When __Recenter To Target Heading__ is checked, Orbital Transposer automatically moves the camera back to the target heading. You can specify the length of time to wait after it has detected no user input and the speed of the recentering.
+**Orbital Transposer **optionally automatically re-centers the camera.  When **Recenter To Target Heading** is checked, Orbital Transposer automatically moves the camera back to the target heading. You can specify the length of time to wait after it has detected no user input and the speed of the recentering.
 
-![Orbital Transposer](images/CinemachineOrbitalTransposer.png)
+![Orbital Transposer](Images/CinemachineOrbitalTransposer_5c6c12dcdd83130d44febdd9.png)
 
 ## Properties:
 
 | **Property:** || **Function:** |
 |:---|:---|:---|
-| __Binding Mode__ || The coordinate space to use when interpreting the offset of the Virtual Camera from the Follow target. |
+| **Binding Mode** || The coordinate space to use when interpreting the offset of the Virtual Camera from the Follow target. |
 | | _Lock To Target On Assign_ | The target’s local frame at the moment when the Virtual Camera was activated, or when the target was assigned. |
 | | _Lock To Target With World Up_ | The target’s local frame, with the tilt and roll reset to zero. |
 | | _Lock To Target No Roll_ | The target’s local frame, with the roll reset to zero. |
 | | _Lock To Target_ | The target’s local frame. |
 | | _World Space_ | World space offset. |
 | | _Simple Follow With World Up_ | Relative to the target, using camera-local axes. |
-| __Follow Offset__ || The position offset to attempt to maintain from the Follow target. |
-| __X Damping__ || How responsively the camera tries to maintain the offset in the x-axis. Small numbers make the camera more responsive. Larger numbers make the camera respond more slowly. Using different settings per axis can yield a wide range of camera behaviors. Not available when Binding Mode is Simple Follow With World Up. |
-| __Y Damping__ || How responsively the camera tries to maintain the offset in the y-axis. Small numbers make the camera more responsive. Larger numbers make the camera respond more slowly.   |
-| __Z Damping__ || How responsively the camera tries to maintain the offset in the z-axis. Small numbers make the camera more responsive. Larger numbers make the camera respond more slowly.   |
-| __Yaw Damping__ || How responsively the camera tries to track the target rotation’s y angle. Small numbers make the camera more responsive. Larger numbers make the camera respond more slowly. Available when Binding Mode is Lock to Target With World Up, Lock to Target No Roll, or Lock to Target. |
-| __Pitch Damping__ || How responsively the camera tries to track the target rotation’s x angle. Small numbers make the camera more responsive. Larger numbers make the camera respond more slowly. Available when Binding Mode is Lock to Target No Roll or Lock to Target. |
-| __Roll Damping__ || How responsively the camera tries to track the target rotation’s z angle. Small numbers make the camera more responsive. Larger numbers make the camera respond more slowly. Available when Binding Mode is Lock to Target.  |
-| __Heading__ || Specifies how to calculate the heading of the Follow target. |
+| **Follow Offset** || The position offset to attempt to maintain from the Follow target. |
+| **X Damping** || How responsively the camera tries to maintain the offset in the x-axis. Small numbers make the camera more responsive. Larger numbers make the camera respond more slowly. Using different settings per axis can yield a wide range of camera behaviors. Not available when Binding Mode is Simple Follow With World Up. |
+| **Y Damping** || How responsively the camera tries to maintain the offset in the y-axis. Small numbers make the camera more responsive. Larger numbers make the camera respond more slowly.   |
+| **Z Damping** || How responsively the camera tries to maintain the offset in the z-axis. Small numbers make the camera more responsive. Larger numbers make the camera respond more slowly.   |
+| **Yaw Damping** || How responsively the camera tries to track the target rotation’s y angle. Small numbers make the camera more responsive. Larger numbers make the camera respond more slowly. Available when Binding Mode is Lock to Target With World Up, Lock to Target No Roll, or Lock to Target. |
+| **Pitch Damping** || How responsively the camera tries to track the target rotation’s x angle. Small numbers make the camera more responsive. Larger numbers make the camera respond more slowly. Available when Binding Mode is Lock to Target No Roll or Lock to Target. |
+| **Roll Damping** || How responsively the camera tries to track the target rotation’s z angle. Small numbers make the camera more responsive. Larger numbers make the camera respond more slowly. Available when Binding Mode is Lock to Target.  |
+| **Heading** || Specifies how to calculate the heading of the Follow target. |
 | | _Definition_ | Choose Position Delta to calculate heading based on the difference in the position of the target from the last update and the current frame. Choose Velocity to use the velocity of the [Rigidbody](https://docs.unity3d.com/Manual/class-Rigidbody.html) of the target. If the target has no Rigidbody component, reverts to Position Delta. Choose Target Forward to use the target's local Forward axis as the heading. Choose World Forward to use a constant world-space Forward as heading. |
 | | _Velocity Filter Strength_ | Controls the smoothing of the velocity when using Position Delta or Velocity in Definition. |
 | | _Bias_ | Angular offset in the orbit to place the camera, relative to the heading. Measured in degrees. An axis value of 0 will put the camera here. |
-| __Recenter To Target Heading__ || Controls automatic recentering when the player gives no input. |
+| **Recenter To Target Heading** || Controls automatic recentering when the player gives no input. |
 | | _Enabled_ | Check to enable automatic recentering. |
 | | _Wait Time_ | If no user input has been detected on the axis, the camera waits this long in seconds before recentering. |
 | | _Recentering Time_ | Maximum angular speed of recentering. Accelerates into and decelerates out of this. |
-| __X Axis__ || Heading Control. The settings here control the behaviour of the camera in response to the player’s input. |
+| **X Axis** || Heading Control. The settings here control the behaviour of the camera in response to the player’s input. |
 | | _Value_ | The current value of the axis, in degrees. |
 | | _Min Value_ | The minimum value for the axis. |
 | | _Max Value_ | The maximum value for the axis. |
