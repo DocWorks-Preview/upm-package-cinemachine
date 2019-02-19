@@ -6,7 +6,7 @@ Filtering lets you fine-tune how and when an Impulse Source generates impulses. 
 
 - Use Trigger Object Filtering with Collision Impulse Sources to set things up so that only certain GameObjects trigger an impulse. See [Filtering with layers and tags](#TriggerObjectFiltering) for details.
 
-<a name="ChannelFiltering"></a>
+
 ## Filtering with channels
 
 By default, every Impulse Listener reacts to every Impulse Source within range. Channels allow you to more precisely control which Impulse Sources an Impulse Listener reacts to. To set up channel filtering, you need to do three things:
@@ -33,7 +33,7 @@ To add new channels:
 
 3. Rename your new channels.
 
-    ![](images/InspectorImpulseChannelsScript.png)
+    ![](Images/InspectorImpulseChannelsScript_5c6c12e6dd83130d44febe4e.png)
 
     Channels are available from the channel drop-down in the Inspector as soon as you add them. 
 
@@ -43,15 +43,15 @@ After setting up your channels, you need to define how your Impulse Listeners an
 
 - Inspect each Impulse Listener, and choose the channels you want it to listen to from the **Channel Mask** drop-down.
 
-    ![](images/InspectorImpulseListenerChannelsMenu.png)
+    ![](Images/InspectorImpulseListenerChannelsMenu_5c6c12e6dd83130d44febe50.png)
 
 - Inspect each Impulse Source or Collision Impulse Source, and choose the channels you want it to broadcast on from the **Impulse Channel** drop-down.
 
-    ![](images/InspectorImpulseSourceChannelsMenu.png)
+    ![](Images/InspectorImpulseSourceChannelsMenu_5c6c12e6dd83130d44febe51.png)
 
     You can select multiple filters from the drop down. You can also choose **Everything** to use all filters, or **Nothing** to use none of them.
 
-<a name="TriggerObjectFiltering"></a>
+
 ## Filtering with layers and tags
 
 You can use Unity’s [Layers](https://docs.unity3d.com/Manual/Layers.html) and [Tags](<https://docs.unity3d.com/Manual/Tags.html>) to specify which GameObjects trigger an impulse when they collide with a Collision Impulse Source, or enter a trigger zone. This is called **Trigger Object Filtering**.
