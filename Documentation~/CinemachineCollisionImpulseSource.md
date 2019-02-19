@@ -22,27 +22,27 @@ The properties in the Cinemachine Collision Impulse Source Inspector window are 
 - [How to Generate The Impulse](#GenerateImpulse) (F)
 
 
-![](images/InspectorCollisionImpulseSource.png)
+![](Images/InspectorCollisionImpulseSource_5c6c12e6dd83130d44febe38.png)
 
 
-<a name="ImpulseChannel"></a>
+
 ### Impulse Channel
 
 Impulse Listeners filter impulses based on channels to control which Impulse Sources they react to. Channels work like Camera Layers, but are distinct from them. These properties control the channels that the Collision Impulse Source broadcasts impulse signals on. For details, see documentation on [Filtering](CinemachineImpulseFiltering.md).
 
-![](images/InspectorImpulseSourceChannel.png)
+![](Images/InspectorImpulseSourceChannel_5c6c12e6dd83130d44febe39.png)
 
 | **Property:**       | **Function:**                                                |
 | ------------------- | ------------------------------------------------------------ |
 | **Impulse Channel** | Choose one or more channels from the drop-down.<br /><br />Click **Edit** to modify existing channels or add new ones. |
 
 
-<a name="SignalShape"></a>
+
 ### Signal Shape
 
 These properties control the basic characteristics of the raw signal when it is emitted by the Collision Impulse Source.
 
-![](images/InspectorImpulseSourceSignal.png)
+![](Images/InspectorImpulseSourceSignal_5c6c12e6dd83130d44febe3a.png)
 
 | **Property:**  | **Function:**                                                |
 | -------------- | ------------------------------------------------------------ |
@@ -53,12 +53,12 @@ These properties control the basic characteristics of the raw signal when it is 
 |**Repeat Mode**|Specify whether to loop the **Raw Signal** over the duration of the time envelope, or stretch it to fit the time envelope.<br /><br />This property is available when the **Raw Signal** is a fixed signal. See [Raw Vibration Signals](CinemachineImpulseRawSignal.md) for details.|
 
 
-<a name="TimeEnvelope"></a>
+
 ### Time Envelope
 
 These properties control the duration of the impulse and the intensity of the **Raw Signal** over that duration.
 
-![](images/InspectorImpulseTimeEnvelope.png)
+![](Images/InspectorImpulseTimeEnvelope_5c6c12e6dd83130d44febe3c.png)
 
 | Property:             | Function:                                                    |
 | --------------------- | ------------------------------------------------------------ |
@@ -68,12 +68,12 @@ These properties control the duration of the impulse and the intensity of the **
 | **Scale With Impact** | Enable this to apply signal amplitude scaling to **Time Envelope**. If checked, the Cinemachine Collision Impulse Source component scales the time envelope according to the strength of the impact: stronger impacts last longer, and milder impacts have a shorter duration. |
 
 
-<a name="SpatialRange"></a>
+
 ### Spatial Range
 
 These properties define a zone in the Scene. The impulses from this Impulse Source only affect Impulse Listeners in this zone.
 
-![](images/InspectorImpulseSourceSpatialRange.png)
+![](Images/InspectorImpulseSourceSpatialRange_5c6c12e6dd83130d44febe3d.png)
 
 | Property:|| Function:|
 |--|--|--|
@@ -88,12 +88,12 @@ These properties define a zone in the Scene. The impulses from this Impulse Sour
 |**Dissipation Distance**||Set the distance beyond the impact radius over which the signal decays from full strength to nothing.|
 
 
-<a name="TriggerObject"></a>
+
 ### Trigger Object Filter
 
 These properties filter the GameObjects that trigger an impulse when they collide or enter the trigger zone. GameObjects in layers specified by the **Layer Mask** trigger impulses unless you tag them with the **Ignore Tag** value. For details, see documentation on [Filtering](CinemachineImpulseFiltering.md).
 
-![](images/InspectorImpulseSourceTriggerObject.png)
+![](Images/InspectorImpulseSourceTriggerObject_5c6c12e6dd83130d44febe3e.png)
 
 | Property:      | Function:                                                    |
 | -------------- | ------------------------------------------------------------ |
@@ -101,12 +101,12 @@ These properties filter the GameObjects that trigger an impulse when they collid
 | **Ignore Tag** | GameObjects with this tag do not generate an impulse, even if they are in a layer specified in **Layer Mask**. |
 
 
-<a name="GenerateImpulse"></a>
+
 ### How To Generate The Impulse
 
 An impulse is triggered at a location by an impact mass moving at an impact velocity. Unity dynamically calculates the mass and velocity of the Rigidbody or Rigidbody 2D component that triggers the impulse. The **How To Generate The Impulse** properties control how the mass and velocity of the Rigidbody affect the strength and direction of the signal. 
 
-![](images/InspectorImpulseSourceHowToGenerate.png)
+![](Images/InspectorImpulseSourceHowToGenerate_5c6c12e6dd83130d44febe3f.png)
 
 | Property:                   | Function:                                                    |
 | --------------------------- | ------------------------------------------------------------ |
