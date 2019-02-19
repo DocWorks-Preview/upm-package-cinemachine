@@ -6,15 +6,15 @@ Use [Timeline](https://docs.unity3d.com/Manual/TimelineSection.html) to activate
 
 Timeline overrides the priority-based decisions made by [Cinemachine Brain](CinemachineBrainProperties.html). When the timeline finishes, control returns to the Cinemachine Brain, which chooses the Virtual Camera with the highest Priority setting.
 
-You control Virtual Cameras in Timeline with a __Cinemachine Shot Clip__. Each shot clip points to a Virtual Camera to activate then deactivate. Use a sequence of shot clips to specify the order and duration of each shot.
+You control Virtual Cameras in Timeline with a **Cinemachine Shot Clip**. Each shot clip points to a Virtual Camera to activate then deactivate. Use a sequence of shot clips to specify the order and duration of each shot.
 
 To cut between two Virtual Cameras, place the clips next to each other. To blend between two Virtual Cameras, overlap the clips.
 
-![Cinemachine Shot Clips in Timeline, with a cut (red) and a blend (blue)](images/CinemachineTimelineShotClips.png)
+![Cinemachine Shot Clips in Timeline, with a cut (red) and a blend (blue)](Images/CinemachineTimelineShotClips_5c6c12dedd83130d44febdfd.png)
 
 To create a Timeline for Cinemachine:
 
-1. Create an empty GameObject in your Scene by choosing the __GameObject > Create Empty __menu item.
+1. Create an empty GameObject in your Scene by choosing the **GameObject > Create Empty **menu item.
 
 2. Give the empty GameObject a descriptive name. For example, `IntroTimeline`.
 
@@ -22,15 +22,15 @@ To create a Timeline for Cinemachine:
 
 4. Click the padlock button to lock the TImeline window to make it easier to add and adjust tracks.
 
-5. Drag a Unity camera with a CinemachineBrain component onto the Timeline Editor, then choose __Create Cinemachine Track__ from the drop-down menu.
+5. Drag a Unity camera with a CinemachineBrain component onto the Timeline Editor, then choose **Create Cinemachine Track** from the drop-down menu.
 
 6. [Add other tracks to the Timeline](https://docs.unity3d.com/Manual/TimelineAddingTracks.html) for controlling the subjects of your Scene.  For example, add an Animation track to animate your main character.
 
-**Tip**: Delete the default track that refers to your Timeline object. This track isn’t necessary for Timeline. For example, in the Timeline editor, right-click the track for IntroTimeline and choose __Delete__.
+**Tip**: Delete the default track that refers to your Timeline object. This track isn’t necessary for Timeline. For example, in the Timeline editor, right-click the track for IntroTimeline and choose **Delete**.
 
 To add Cinemachine Shot Clips to a Cinemachine Track:
 
-1. In the Cinemachine Track, right-click and choose __Add Cinemachine Shot Clip__.
+1. In the Cinemachine Track, right-click and choose **Add Cinemachine Shot Clip**.
 
 2. Do one of the following:
 
