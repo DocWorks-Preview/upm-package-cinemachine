@@ -1352,7 +1352,7 @@ This is a CinemachineComponent in the the Body section of the component pipeline
 
 This component is typically used to implement a camera that follows its target.  It can accept player input from an input device, which allows the player to dynamically control the relationship between the camera and the target, for example with a joystick.
 
-The OrbitalTransposer introduces the concept of __Heading__, which is the direction in which the target is moving, and the OrbitalTransposer will attempt to position the camera in relationship to the heading, which is by default directly behind the target.  You can control the default relationship by adjusting the Heading Bias setting.
+The OrbitalTransposer introduces the concept of **Heading**, which is the direction in which the target is moving, and the OrbitalTransposer will attempt to position the camera in relationship to the heading, which is by default directly behind the target.  You can control the default relationship by adjusting the Heading Bias setting.
 
 If you attach an input controller to the OrbitalTransposer, then the player can also control the way the camera positions itself in relation to the target heading.  This allows the camera to move to any spot on an orbit around the target.
 
