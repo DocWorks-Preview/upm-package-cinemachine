@@ -21,25 +21,25 @@ The properties in the Cinemachine Impulse Source Inspector window are divided in
 - [Time Envelope](#TimeEnvelope) (C)
 - [Spatial Range](#SpatialRange) (D)
 
-![](images/InspectorImpulseSource.png)
+![](Images/InspectorImpulseSource_5c6c12e6dd83130d44febe3b.png)
 
-<a name="ImpulseChannel"></a>
+
 ### Impulse Channel
 
 Impulse Listeners filter impulses based on channels to control which Impulse Sources they react to. Channels work like Camera Layers, but are distinct from them. These properties control the channels that the Impulse Source broadcasts impulse signals on. For details, see documentation on [Filtering](CinemachineImpulseFiltering.md).
 
-![](images/InspectorImpulseSourceChannel.png)
+![](Images/InspectorImpulseSourceChannel_5c6c12e6dd83130d44febe39.png)
 
 | **Property:**       | **Function:**                                                |
 | ------------------- | ------------------------------------------------------------ |
 | **Impulse Channel** | Choose one or more channels from the drop-down.<br /><br />Click **Edit** to modify existing channels or add new ones. |
 
-<a name="SignalShape"></a>
+
 ### Signal Shape
 
 These properties control the basic characteristics of the raw signal when it is emitted by the Impulse Source.
 
-![](images/InspectorImpulseSourceSignal.png)
+![](Images/InspectorImpulseSourceSignal_5c6c12e6dd83130d44febe3a.png)
 
 | **Property:**  | **Function:**                                                |
 | -------------- | ------------------------------------------------------------ |
@@ -49,12 +49,12 @@ These properties control the basic characteristics of the raw signal when it is 
 |**Randomize**|Enable this to randomize the **Raw Signal’s** start time.<br /><br />This property is available when the **Raw Signal** is a noise profile Asset. See [Raw Vibration Signals](CinemachineImpulseRawSignal.md) for details.|
 |**Repeat Mode**|Specify whether to loop the **Raw Signal** over the duration of the time envelope, or stretch it to fit the time envelope.<br /><br />This property is available when the **Raw Signal** is a fixed signal. See [Raw Vibration Signals](CinemachineImpulseRawSignal.md) for details.|
 
-<a name="TimeEnvelope"></a>
+
 ### Time Envelope
 
 These properties control the duration of the impulse and the intensity of the **Raw Signal** over that duration.
 
-![](images/InspectorImpulseTimeEnvelope.png)
+![](Images/InspectorImpulseTimeEnvelope_5c6c12e6dd83130d44febe3c.png)
 
 | Property:             | Function:                                                    |
 | --------------------- | ------------------------------------------------------------ |
@@ -64,12 +64,12 @@ These properties control the duration of the impulse and the intensity of the **
 | **Scale With Impact** | Enable this to apply signal amplitude scaling to **Time Envelope**. If checked, the Cinemachine Impulse Source component scales the time envelope according to the strength of the impact: stronger impacts last longer, and milder impacts have a shorter duration. |
 
 
-<a name="SpatialRange"></a>
+
 ### Spatial Range
 
 These properties define a zone in the Scene. The impulses from this Impulse Source only affect Impulse Listeners in this zone.
 
-![](images/InspectorImpulseSourceSpatialRange.png)
+![](Images/InspectorImpulseSourceSpatialRange_5c6c12e6dd83130d44febe3d.png)
 
 | Property:|| Function:|
 |--|--|--|
