@@ -16,13 +16,13 @@ To create a new fixed signal Asset:
 
 3. Locate the new Asset in the Project view and select it to open the Fixed Signal Inspector.
 
-   ![](images/InspectorFixedSignalTiles.png)
+   ![](Images/InspectorFixedSignalTiles_5c6c12e6dd83130d44febe48.png)
 
    The Inspector displays a preview of the curve for each axis. Click a preview pane to define your own curve for that axis. If you leave it blank, there is no movement along that axis.
 
 4. Click a preview curve to open the Curve editor, where you can edit the curve for that axis.
 
-   ![](images/FixedSignalEditor.png)
+   ![](Images/FixedSignalEditor_5c6c12e6dd83130d44febe49.png)
 
 5. Click one of the thumbnails at the bottom of the window to apply a curve preset. You can then edit the curve:
 
