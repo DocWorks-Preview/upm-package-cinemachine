@@ -26,7 +26,7 @@ To create a new noise profile Asset:
 
 3. Locate the new Asset in the Project view and select it to open the Noise Profile Inspector.
 
-   ![img](images/InspectorNoiseProfile.png)
+   ![img](Images/InspectorNoiseProfile_5c6c12e6dd83130d44febe47.png)
 
    The Inspector displays a compound waveform for rotational noise and positional noise. You can expand any rotational or positional axis to view and edit its waveforms individually.
    
