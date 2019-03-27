@@ -1,8 +1,8 @@
 Unity Manual ToC
 ================
  - [Cinemachine Documentation]()
-	 - [Cinemachine overview](CinemachineOverview.md)
 	 - [Cinemachine Documentation Overview](index.md)
+	 - [Cinemachine overview](CinemachineOverview.md)
 	 - [Getting started](CinemachineGettingStarted.md)
 	 - [Setting up Virtual Cameras](CinemachineSetUpVCam.md)
 	 - [Saving in Play Mode](CinemachineSavingDuringPlay.md)
